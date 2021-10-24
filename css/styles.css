@@ -18,6 +18,7 @@ body {
 }
 .header .logo .logo_img {
   width: 128px;
+  height: 58px;
 }
 .header .search-form {
   margin-left: 76px;
