@@ -2,6 +2,8 @@ $color_1: #EEEEEEB5;
 $color_2: #000;
 $color_3: #F66A15;
 $color_4: #FFAF19;
+$color_5: #fff;
+$color_6: #F47322;
 
 *{
   box-sizing: border-box;
@@ -14,6 +16,29 @@ body{
 .container{
   max-width: 1194px;
   margin: auto;
+}
+
+.text-light{
+  color: $color_5;
+}
+
+.btn{
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn-default{
+  background-color: $color_5;
+  color: $color_2;
+  padding: 12px 50px;
+  display: inline-block;
+}
+
+.btn-primary{
+  background-color: $color_6;
+  color: $color_5;
+  padding: 12px 50px;
+  display: inline-block;
 }
 
 .header{
@@ -42,6 +67,7 @@ body{
       background-color: transparent;
       border: none;
       padding: 20px 13px;
+
     }
 
     .search-button{
@@ -96,6 +122,150 @@ body{
     }
   }
 }
+
+.slider{
+
+  .slide-summer{
+    background-image: url("../img/slide-summer.png");
+  }
+
+  .slide-autumn {
+    background-image: url("../img/slide-autumn.png");
+  }
+
+  .slider-vitamin{
+    background-image: url("../img/slider-vitamin.png");
+  }
+
+  .slide{
+    position: relative;
+    background-color: $color_1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+
+
+    .slide-content{
+      position: absolute;
+      max-width: 400px;
+
+      .slide-title{
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 51px;
+      }
+
+      .slide-text{
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+.slide:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%,
+          rgba(0, 0, 0, 0) 100%);
+}
+
+.promo{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  .card-1{
+    background-image: url("../img/card-1.png");
+  }
+
+  .card-2{
+    background-image: url("../img/card-2.png");
+  }
+
+  .card{
+    min-width: 570px;
+    min-height: 380px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $color_1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-header{
+      position: relative;
+
+      .card-title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 23px;
+        margin-top: 4px;
+        margin-bottom: 32px;
+      }
+
+      .card-description{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 200px;
+      }
+    }
+
+    .card-footer{
+      position: relative;
+
+      .card-price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 23px;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .card-delivery{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        display: block;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.card:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+
 
 
 
