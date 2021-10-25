@@ -1,10 +1,3 @@
-$color_1: #EEEEEEB5;
-$color_2: #000;
-$color_3: #F66A15;
-$color_4: #FFAF19;
-$color_5: #fff;
-$color_6: #F47322;
-
 *{
   box-sizing: border-box;
 }
@@ -19,7 +12,7 @@ body{
 }
 
 .text-light{
-  color: $color_5;
+  color: #fff;
 }
 
 .btn{
@@ -28,17 +21,33 @@ body{
 }
 
 .btn-default{
-  background-color: $color_5;
-  color: $color_2;
+  background-color: #fff;
+  color: #000;
   padding: 12px 50px;
   display: inline-block;
 }
 
 .btn-primary{
-  background-color: $color_6;
-  color: $color_5;
+  background-color: #fF4732;
+  color: #fff;
   padding: 12px 50px;
   display: inline-block;
+}
+
+.btn-outline{
+  border: 2px solid #F37321;
+  box-sizing: border-box;
+  border-radius: 33px;
+  padding: 14px 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-center{
+  display: block;
+  margin: 62px auto auto auto;
+  background-color: #F6F6F6;
+  padding: 16px 105px;
 }
 
 .header{
@@ -55,7 +64,7 @@ body{
 
   .search-form{
     margin-left: 76px;
-    background: $color_1;
+    background: #EEEEEEB5;
     border-radius: 10px;
     display: flex;
     max-width: 620px;
@@ -93,7 +102,7 @@ body{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: $color_2;
+    color: #000;
   }
 
   .shopping-cart{
@@ -102,7 +111,7 @@ body{
     width: 49px;
     height: 49px;
     border-radius: 50px;
-    background-color: $color_3;
+    background-color: #F66A15;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,8 +121,8 @@ body{
       position: absolute;
       right: 0;
       bottom: 0;
-      background-color: $color_4;
-      color: $color_2;
+      background-color: #FFAF19;
+      color: #000;
       font-size: 8px;
       line-height: 9px;
       display: block;
@@ -139,7 +148,7 @@ body{
 
   .slide{
     position: relative;
-    background-color: $color_1;
+    background-color: #EEEEEEB5;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
@@ -186,9 +195,11 @@ body{
 }
 
 .promo{
-  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
+  margin: -20px;
 
   .card-1{
     background-image: url("../img/card-1.png");
@@ -199,12 +210,14 @@ body{
   }
 
   .card{
-    min-width: 570px;
+    margin: 20px;
+    flex-grow: 1;
+    max-width: 570px;
     min-height: 380px;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background-color: $color_1;
+    background-color: #EEEEEEB5;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 32px;
@@ -264,6 +277,282 @@ body{
   height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
+
+.delivery-week{
+  padding: 100px 0;
+
+  .section-title{
+    color: #000;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 47px;
+  }
+
+  .delivery-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    .delivery-card{
+      position: relative;
+      width: 275px;
+      height: 182px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin: 15px;
+
+      .delivery-tag{
+        position: absolute;
+        left: 10px;
+        top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        border-radius: 30px;
+        background-color: #EEEEEEB5;
+        padding: 5px 10px;
+      }
+
+      .tag-health{
+        color: #49494F;
+        background-color: #D0FD89;
+      }
+
+      .tag-vegetables{
+        color: #fff;
+        background-color: #AEBC41;
+      }
+
+      .tag-meat{
+        color: #fff;
+        background-color: #B86B78;
+      }
+
+      .tag-poultry-meat{
+        color: #fff;
+        background-color: #D68334;
+      }
+
+      .tag-fish{
+        color: #fff;
+        background-color: #CD6255;
+      }
+
+      .tag-children{
+        color: #49494F;
+        background-color: #FFFDBF;
+      }
+
+      .tag-parents{
+        color: #49494F;
+        background-color: #F6FDC8;
+      }
+
+      .tag-prize{
+        color: #49494F;
+        background-color: #FEF7FE;
+      }
+
+      .delivery-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.section-gray{
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #F6F6F6;
+
+  .section-title{}
+
+  .tabs{
+    display: flex;
+    margin: 0 0 62px 0;
+    padding: 0;
+    list-style: none;
+
+
+    .tabs-item{
+      margin-right: 58px;
+
+      .tabs-link{
+        font-size: 20px;
+        line-height: 23px;
+        color: #49494F;
+        text-decoration: none;
+      }
+
+      .active{
+        color: #F37321;
+      }
+    }
+
+    .active{}
+  }
+  .tabs-content{
+    margin: -40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tabs-card{
+      background: #fff;
+      max-width: 270px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 20px;
+
+      .tabs-img{
+        max-width: 100%;
+      }
+
+      .tabs-card-content{
+        padding: 23px;
+
+        .tabs-title{
+          padding-top: 0;
+          padding-bottom: 13px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 23px;
+        }
+
+        .tabs-description{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 23px;
+          color: #B9B9BE;
+        }
+
+        .tabs-info{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .tabs-good{
+            display: flex;
+            flex-direction: column;
+
+            .tabs-price{
+              font-weight: 500;
+              font-size: 23px;
+              line-height: 23px;
+              color: #4B4B51;
+            }
+
+            .tabs-weight{
+              font-weight: 500;
+              font-size: 17px;
+              line-height: 20px;
+              color: #AAAAB1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.advantage{
+  padding: 100px 0 200px 0;
+
+  .advantage-title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    color: #000000;
+    margin-bottom: 52px;
+  }
+
+  .advantage-cards{
+    margin: -40px;
+    display: flex;
+
+    .advantage-card{
+      margin: 20px;
+      max-width: 270px;
+      min-height: 296px;
+      background: #FFFFFF;
+      border: 1px solid #E9E9E9;
+      box-sizing: border-box;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+      border-radius: 18px;
+
+      .advantage-card-container-img{
+        min-height: 124px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        .advantage-card-img{
+          max-width: 60px;
+        }
+      }
+
+      .advantage-card-title{
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #000000;
+        padding: 0 40px;
+      }
+
+      .advantage-card-description{
+        margin-top: 13px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #49494F;
+        padding: 0 23px;
+      }
+    }
+  }
+}
+
+.footer{
+  background: #F6F6F6;
+  padding: 40px 0;
+
+  .footer-wrapper{
+    display: flex;
+    align-items: center;
+
+    .footer-logo{
+      margin-right: 50px;
+    }
+
+    .footer-nav{
+
+      .footer-link{
+        margin-right: 50px;
+        font-size: 16px;
+        line-height: 23px;
+        color: #000000;
+      }
+    }
+
+    .social-links{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+
+      .social-link{
+        margin-left: 20px;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+
 
 
 
